@@ -1,15 +1,7 @@
-import pygame 
-pygame.init
+import pygame
+from game import *
 
-#Création de la fenêtre
-pygame.display.set_mode((800,600))
-pygame.display.set_caption("Professor Dark")
-
-#Boucle du jeu
-running = True
-while running : 
-    for event in pygame.event.get() :
-        if event.type == pygame.QUIT :
-            running = False
-            
-pygame.quit()
+if __name__ == '__main__' :
+    pygame.init()
+    game = Game()
+    game.run()
