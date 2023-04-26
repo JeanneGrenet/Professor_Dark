@@ -5,7 +5,7 @@ class Player(pygame.sprite.Sprite) :
     def __init__(self,x,y) :
         super().__init__()
         #Load the different positions of the player 
-        self.sprite_sheet = pygame.image.load('assets/player.png')
+        self.sprite_sheet = pygame.image.load('assets/spritesheets/player.png')
         self.image = self.get_image(0,128)
         self.image.set_colorkey([0,0,0])
         self.rect = self.image.get_rect()
