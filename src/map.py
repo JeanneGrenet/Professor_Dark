@@ -28,7 +28,8 @@ class MapManager :
             Portal(from_world = "world",origin_point ="enter_church",target_world ="church",teleport_point ="spawn_church"),
             Portal(from_world = "world",origin_point ="enter_market",target_world ="market",teleport_point ="spawn_market"),
             Portal(from_world = "world",origin_point ="enter_city_hall",target_world ="city_hall",teleport_point ="spawn_city_hall"),
-            Portal(from_world = "world",origin_point ="enter_theatre",target_world ="theatre",teleport_point ="spawn_theatre")
+            Portal(from_world = "world",origin_point ="enter_theatre",target_world ="theatre",teleport_point ="spawn_theatre"),
+            Portal(from_world = "world",origin_point ="enter_courthouse",target_world ="courthouse",teleport_point ="spawn_courthouse")
         ])
         self.register_map("house",portals=[
             Portal(from_world = "house",origin_point ="exit_house",target_world ="world",teleport_point ="enter_house_exit")
@@ -44,6 +45,9 @@ class MapManager :
         ])
         self.register_map("theatre",portals=[
             Portal(from_world = "theatre",origin_point ="exit_theatre",target_world ="world",teleport_point ="enter_theatre_exit")
+        ])
+        self.register_map("courthouse",portals=[
+            Portal(from_world = "courthouse",origin_point ="exit_courthouse",target_world ="world",teleport_point ="enter_courthouse_exit")
         ])
         self.teleport_player('player')
         
