@@ -13,7 +13,8 @@ class Entity(AnimateSprite) :
         self.position = [x,y]
         self.feet = pygame.Rect(0,0,self.rect.width*0.5,12)
         self.old_position = self.position.copy()
-        self.speed=3
+        self.speed = 3
+        self.level = 0
     
 
     
@@ -47,7 +48,11 @@ class Entity(AnimateSprite) :
         self.position = self.old_position
         self.rect.topleft = self.position
         self.feet.midbottom = self.rect.midbottom
-            
+
+    #Update the level of the player
+    def level_up(self):
+        self.level += 1
+                   
 class Player(Entity):
     
     def __init__(self):

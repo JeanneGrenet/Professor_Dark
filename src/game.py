@@ -1,7 +1,8 @@
 import pygame, pytmx, pyscroll
 from player import *
 from map import *
-from dialog import DialogBox
+from dialog import DialogBox, LevelBox
+
 
 class Game :
     def __init__(self) :
@@ -13,7 +14,8 @@ class Game :
         #Creation of the player in the game
         self.player = Player()
         self.map_manager = MapManager(self.screen,self.player)
-        self.dialog_box = DialogBox()
+        self.dialog_box = DialogBox(self.player)
+        self.level = LevelBox(self.player)
 
     
     
@@ -48,6 +50,7 @@ class Game :
             self.update()
             self.map_manager.draw()
             self.dialog_box.render(self.screen)
+            self.level.render(self.screen)
             pygame.display.flip()
             for event in pygame.event.get() :
                 if event.type == pygame.QUIT :
