@@ -13,6 +13,8 @@ After downloading the repository, make sure you have installed the right python 
 
 1. To move your caracter, use the directional arrows.
 2. You can visit the city of Rouen and enter in the batiments
+3. You can talk to NPC.
+4. You have a level and can level up.
 
 ## To do : 
 
