@@ -13,6 +13,7 @@ class AnimateSprite(pygame.sprite.Sprite):
             'left' : self.get_images(48),
             'right' : self.get_images(96)     
             }
+        
         self.speed=3
     #Load one image of the player    
     def get_image(self,x,y) : 
