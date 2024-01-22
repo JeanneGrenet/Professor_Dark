@@ -1,4 +1,4 @@
-import pygame, pytmx, pyscroll
+import pygame
 from player import *
 from map import *
 from dialog import DialogBox, LevelBox
